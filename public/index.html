@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystery Calculator</title>
+    <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <style>
+        .cards {
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .card {
+            cursor: pointer;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            width: 49%;
+            font-size: .9em;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+        }
+        .card.chosen {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+        }
+        .number {
+            text-align: center;
+            font-size: 1.5em;
+        }
+        @media (max-width: 700px) {
+            .cards { display: block; }
+            .cards .card { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mystery Calculator</h1>
+    </header>
+
+    <blockquote>
+        <strong>How to play:</strong>
+        Pick a number from one of the cards below and then select <em>all</em> the cards this number appears on.
+    </blockquote>
+
+    <div id="app"></div>
+
+    <script src="js/main.js"></script>
+    <script>mystery_calculator.core.init();</script>
+</body>
+</html>
