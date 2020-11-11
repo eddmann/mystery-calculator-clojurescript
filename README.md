@@ -1,5 +1,12 @@
 # Mystery Calculator
 
+_ClojureScript, Reagent and GitHub Pages_
+
+Demo: [https://eddmann.com/mystery-calculator-clojurescript/](https://eddmann.com/mystery-calculator-clojurescript/)<br>
+Article: [https://eddmann.com/posts/the-mystery-calculator-in-clojurescript-and-reagent/](https://eddmann.com/posts/the-mystery-calculator-in-clojurescript-and-reagent/)
+
+![Mystery Calculator](mystery-calculator.png)
+
 ## Instructions
 
 The complete set consists of `N` cards, printed with a series of numbers, show all the cards to a friend and ask him or her to select-one number from any one card.
